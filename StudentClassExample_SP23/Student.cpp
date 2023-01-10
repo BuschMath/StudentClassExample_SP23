@@ -20,6 +20,18 @@ void Student::removeCourse(string name_, string semester_)
 {
 }
 
+Course* Student::getCourses()
+{
+	Course* temp = new Course[numCourses];
+
+	for (int i = 0; i < numCourses; i++)
+	{
+		temp[i] = courses[i];
+	}
+
+	return temp;
+}
+
 float Student::calculateGPA()
 {
 	return 0.0f;

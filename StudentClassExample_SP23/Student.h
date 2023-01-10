@@ -36,6 +36,7 @@ public:
 	string getID() { return id; };
 	float getGPA() { return gpa; };
 	int getNumCourses() { return numCourses; };
+	Course* getCourses();
 
 	float calculateGPA();
 	Course* findCoursesByGrade(Grade grade);
