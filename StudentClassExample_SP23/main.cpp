@@ -25,5 +25,12 @@ int main()
 	s.addCourse(calc1);
 	s.addCourse(calc2);
 
+	Course* courses = s.getCourses();
+
+	for (int i = 0; i < s.getNumCourses(); i++)
+	{
+		cout << courses[i].name << " " << courses[i].grade << " " << courses[i].semester << endl;
+	}
+
 	return 0;
 }
